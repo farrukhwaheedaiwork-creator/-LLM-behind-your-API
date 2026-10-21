@@ -1,0 +1,17 @@
+{
+  "name": "llm-triage-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20.6" },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "hello": "node --env-file=.env src/llm/hello.js",
+    "eval": "node --env-file=.env evals/run.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "openai": "^4.104.0",
+    "zod": "^3.23.8"
+  }
+}
